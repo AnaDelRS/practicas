@@ -19,6 +19,9 @@
 		/*height: 400px;*/
 		/*background-color: pink;*/
 	}
+	.checked, #burguer{
+		display: none;
+	}
 	#menu{
 		overflow: hidden;
 		text-align: center;

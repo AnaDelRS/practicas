@@ -1,6 +1,6 @@
 /*768px de corte
 A partir de este empezaremos a hacer el menú hamburguesa*/
-@media screen and (min-width: 481px){
+@media screen and (min-width: 481px) and (max-width: 768px){
 	body{
 		background-color: yellowgreen;
 	}
