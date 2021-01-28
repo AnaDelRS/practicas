@@ -19,7 +19,7 @@
 		/*height: 400px;*/
 		/*background-color: pink;*/
 	}
-	.checked, #burguer{
+	.checked{
 		display: none;
 	}
 	#menu{

@@ -48,7 +48,7 @@ A partir de este empezaremos a hacer el menú hamburguesa*/
 		position: absolute;
 		top: 50px;
 		left: -100%;
-		width: 100%;
+		width: 50%;
 		transition: 1s;
 	}
 	#main{
