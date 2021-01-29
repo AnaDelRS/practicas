@@ -6,15 +6,36 @@
 body{
 	height: 100vh;
 }
-.fa{
+#header{
+	height: 10vh;
+	background-color: #FFF;
+}
+/*.fa{
 	font-size: 48px;
 	color: black;
 	margin: 0 5px;
 	margin-top: 5px;
+}*/
+.insta{
+	width: 20vh;
 }
-#header{
-	height: 10vh;
-	background-color: #DDD;
+.fa-paper-plane{
+	font-size: 25px;
+	float: right;
+	margin: 10px;
+	color: black;
+}
+.fa-heart{
+	font-size: 25px;
+	float: right;
+	margin: 10px;
+	color: black;
+}
+.fa-plus-square{
+	font-size: 25px;
+	float: right;
+	margin: 10px;
+	color: black;
 }
 #aside{
 	height: 15vh;
