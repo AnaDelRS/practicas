@@ -1,0 +1,221 @@
+ul{
+    list-style-type: none;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    margin-inline-start: unset;
+    margin-inline-end: unset;
+    padding-inline-start: unset;
+}
+
+body{
+	font-family: 'Oswald';
+	margin: 0;
+}
+#header{
+	width: 100%;
+    height: 52px;
+    background: white;
+}
+#header div{
+	display: inline-block;
+	position: fixed;
+	overflow: hidden;
+}
+.logo{
+	position: absolute;
+	top: 10px;
+	left: 30px;
+}
+#menu{
+	overflow: hidden;
+    text-align: center;
+	position: relative;
+    line-height: 50px;
+    width: auto;
+    margin: 0 auto;
+	font-weight: 500;
+}
+#menu > li{
+	margin-left: 23px;
+}
+#menu li .sub{
+	top: 52px;
+	left: 0px;
+	display: none;
+	width: 100%;
+	position: fixed;
+	z-index: 5;
+	margin-bottom: 30px;
+	padding-left: 40px;
+	overflow: hidden;
+	background-color: white;
+	text-align: left;
+	list-style: none;
+	font-weight: 500;
+}
+.sub li{
+	margin-bottom: 20px;
+}
+.sub > li:first-child{
+	margin-top: 20px;
+}
+#menu li:hover > .sub{
+		display: block;
+}
+#menu > li{
+	display: inline-block;
+	margin-left: 20px;
+}
+#menu li a{
+	text-decoration: none;
+	color: #666;
+}
+.titulo{
+	font-size: 20px;
+}
+.carretera{
+	width: 180px;
+}
+.modelos{
+	position: fixed;
+	left:200px;
+	top:70px;
+	display: none;
+	width: 200px;
+	border-left: solid 2px #000;
+    padding-left: 50px;
+}
+.personalizar{
+	position: fixed;
+	left:400px;
+	top:70px;
+	display: none;
+	width: 200px;
+	border-left: solid 2px #000;
+    padding-left: 50px;
+}
+.carretera:hover > .personalizar,.carretera:hover > .modelos,
+.modelos:hover, .personalizar:hover{
+	display: block;
+}
+.modelos img{
+	display: none;
+	position: fixed;
+	right: 0;
+	top: 50px;
+	width: 45%;
+	height: 440px;
+}
+.modelos .orca:hover img,.modelos .orcaaero:hover img,.modelos .avant:hover img,.modelos .terra:hover img{
+	display: block;
+}
+.personalizar img{
+	display: none;
+	position: fixed;
+	right: 0;
+	top: 50px;
+	width: 40%;
+	height: 440px;
+}
+.personalizar .orca2:hover img,.personalizar .orcaaero2:hover img,.personalizar .terra2:hover img{
+	display: block;
+}
+
+.iconos{
+	float: right;
+    top: 15px;
+    position: fixed;
+    right: 20px;
+}
+.iconos li{
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.banner img{
+	width: 100%;
+	margin: 0 auto;
+}
+@media screen and (min-width: 993px){
+	.checked{
+		display: none;
+	}
+}
+@media screen and (max-width: 992px){
+.logo {
+   position: absolute;
+   top: 15px;
+   left: 30px;
+}
+.checked{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	z-index: 2;
+	opacity: 0;
+	}
+#hamburguesa{
+	background-color: white;
+	width: 15px;
+	height: 15px;
+	padding-top: 15px;
+	padding-right: 15px;
+	float: right;
+}
+#hamburguesa li{
+	background-color: black;
+	width: 15px;
+	height: 1px;
+	margin: 5px auto;
+	border-radius: 15px;
+}
+#menu{
+	position: absolute;
+	top: 50px;
+	right: -100%;
+	width: 100%;
+	transition: 1s;
+	background-color: white;
+	text-align: left;
+}
+#menu > li{
+	display: block;
+}
+.checked:checked ~ #menu{
+	right: 0;
+	transition: 1s;
+}
+.iconos{
+	top: 15px;
+	position: fixed;
+	right: 60px;
+}
+.carretera:hover > .personalizar,.carretera:hover > .modelos,
+.modelos:hover, .personalizar:hover{
+	display: contents;
+}
+#menu li:hover > .sub{
+	display: inline-block;
+}
+.sub li:hover > .modelos{
+	display: contents;
+}
+.modelos img{
+	display: none;
+}
+.personalizar img{
+display: none;
+}
+.modelos .orca:hover img,.modelos .orcaaero:hover img,.modelos .avant:hover img,.modelos .terra:hover img{
+	display: none;
+}
+.personalizar .orca2:hover img,.personalizar .orcaaero2:hover img,.personalizar .terra2:hover img{
+	display: none;
+}
+.titulo{
+	font-size: 16px;
+	font-weight: 700;
+}
+}
